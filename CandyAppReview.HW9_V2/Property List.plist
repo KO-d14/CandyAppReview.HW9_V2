@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>New item</key>
+	<string></string>
+	<key>CategoryTwoImages</key>
+	<array>
+		<string>JapanesSnack_HatoSable</string>
+		<string>JapaneseSnack_SapporoPotato</string>
+		<string>JapanesSnack_CountryMaam</string>
+		<string>JapaneseSnack_Yogurt</string>
+	</array>
+	<key>CategoryOneImages</key>
+	<array>
+		<string>Chocolate_Crunch</string>
+		<string>Chocolate_KitKat</string>
+		<string>Chocolate_ThreeMusketeers</string>
+		<string>Chocolate_Twix</string>
+	</array>
+</dict>
+</plist>
