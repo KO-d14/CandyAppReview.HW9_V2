@@ -5,33 +5,36 @@
 //  Created by Aina Kodaira on 11/9/23.
 //
 
-// THIS IS FOR THIRD TAB - 
+// THIS IS THE PAGE WITH THE TABLEVIEW
+// 3RD TAB - SUGARED CANDIES
 import UIKit
 
 class fourthViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
     
     //>>>Part 8-#1
     //Change names as necessary
-        var categoryTwoImagesData = [String]()
+        var categoryThreeImagesData = [String]()
       
     
-    var japaneseSnackArray = ["Hato Sable","Sapporo Potato", "Country Maam", "Yogurt"]
-    var ratingsArray = ["★★★★★", "★★★★★", "★★★★★", "★★★★★"]
+    var sugarCandiesArray = ["Coca-Cola Gummies", "Gummy Bears", "RingPop", "Candy Corn"]
+    var ratingsArray = ["4 Stars ★★★★☆", "4 Stars ★★★★☆", "3 Stars ★★★☆☆", "4 Stars ★★★★☆"]
     
 
-   // @IBOutlet weak var secondTabTableView: UITableView!
+
+    @IBOutlet weak var fourthTabTableView: UITableView!
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         //DISPLAYS THE ROWS
-        return japaneseSnackArray.count
+        return sugarCandiesArray.count
     }//func tableView #OFROWSINSECTION closing bracket
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         //TO GET CELL'S TITLE & SUBTITLE<-- change name to "SUBTITLE" in attributes under doc outline
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let text = japaneseSnackArray[indexPath.row]
+        let text = sugarCandiesArray[indexPath.row]
     //connection to the subtitle
         cell.detailTextLabel?.text = ratingsArray[indexPath.row]
         cell.textLabel?.text = text
@@ -53,10 +56,23 @@ class fourthViewController: UIViewController , UITableViewDelegate, UITableViewD
           if segue.identifier == "mySegue"
 
           {
-              let s1 = segue.destination as! thirdDetailViewController
-              let imageIndex = secondTabTableView.indexPathForSelectedRow?.row
-              s1.imagePass = categoryTwoImagesData[imageIndex!]
+              let s1 = segue.destination as! fourthDetailViewController
+              let imageIndex = fourthTabTableView.indexPathForSelectedRow?.row
+              s1.imagePass = categoryThreeImagesData[imageIndex!]
 
-          }
-  }
+          }//if closing bracket
+  } //func prepare closing bracket
+    
+    //>>>Part 8-#2.
+    override func viewDidLoad()
+    {
+//>>>Part 8-#2.
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        categoryThreeImagesData = dict!.object(forKey:"CategoryThreeImages") as! [String]
+        
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    } //func viewDidLoad closing bracket
+
 }

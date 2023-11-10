@@ -5,7 +5,9 @@
 //  Created by Aina Kodaira on 11/9/23.
 //
 
-// FOR JAPANESE CANDIES
+// THIS IS THE PAGE WITH THE TABLEVIEW
+// 2ND TAB - JAPANESE CANDIES
+
 import UIKit
 
 class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -14,12 +16,12 @@ class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //Change names as necessary 
         var categoryTwoImagesData = [String]()
       
-    
     var japaneseSnackArray = ["Hato Sable","Sapporo Potato", "Country Maam", "Yogurt"]
     var ratingsArray = ["★★★★★", "★★★★★", "★★★★★", "★★★★★"]
     
-
-    @IBOutlet weak var secondTabTableView: UITableView!
+    @IBOutlet weak var thirdTableView: UITableView!
+    
+   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -54,9 +56,21 @@ class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
           {
               let s1 = segue.destination as! thirdDetailViewController
-              let imageIndex = secondTabTableView.indexPathForSelectedRow?.row
+              let imageIndex = thirdTableView.indexPathForSelectedRow?.row
               s1.imagePass = categoryTwoImagesData[imageIndex!]
 
           }
   }
+      
+      override func viewDidLoad()
+      {
+  //>>>Part 8-#2.
+          let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+          let dict = NSDictionary(contentsOfFile: path!)
+          categoryTwoImagesData = dict!.object(forKey:"CategoryTwoImages") as! [String]
+          
+          super.viewDidLoad()
+          // Do any additional setup after loading the view.
+      } //func viewDidLoad closing bracket
+  
 }

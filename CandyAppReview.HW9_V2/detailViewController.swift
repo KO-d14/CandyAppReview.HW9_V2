@@ -11,17 +11,16 @@ import UIKit
 
 class detailViewController: UIViewController {
 
-//outlets for the CRUNCH 
-    @IBOutlet weak var crunchLabel: UILabel!
-    @IBOutlet weak var crunchImageView: UIImageView!
-    @IBOutlet weak var crunchTextView: UITextView!
-    
+//outlets for the HATO SABLE <--- CHANGED SNACK
+    @IBOutlet weak var featuredSnackImageView: UIImageView!
+    @IBOutlet weak var featuredSnackTextView: UITextView!
+    @IBOutlet weak var featuredSnackLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        crunchImageView.image = UIImage(named: "crunch")
-        crunchLabel.text = "Crunch"
-        crunchTextView.text = " "
+        featuredSnackImageView.image = UIImage(named: "JapaneseSnack_HatoSabre")
+        featuredSnackLabel.text = "Hato Sabre"
+        featuredSnackTextView.text = "Hato Sabre, a Japanese snack favorite, offers a delightful crunch and subtle sweetness in every bite. These slender biscuit sticks are known for their light texture and delicate flavor, often featuring hints of butter or vanilla. They're a perfect accompaniment to a hot beverage or simply as a standalone treat. "
         // Do any additional setup after loading the view.
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63673D8B2AFDF11600E98EC8 /* fourthDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63673D8A2AFDF11600E98EC8 /* fourthDetailViewController.swift */; };
 		63ADD8DA2AFD0CCC0010CF61 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ADD8D92AFD0CCC0010CF61 /* thirdViewController.swift */; };
 		63ADD8DC2AFD0E3C0010CF61 /* thirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ADD8DB2AFD0E3C0010CF61 /* thirdDetailViewController.swift */; };
 		63ADD8DE2AFD11F90010CF61 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ADD8DD2AFD11F90010CF61 /* fourthViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63673D8A2AFDF11600E98EC8 /* fourthDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthDetailViewController.swift; sourceTree = "<group>"; };
 		63ADD8D92AFD0CCC0010CF61 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		63ADD8DB2AFD0E3C0010CF61 /* thirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdDetailViewController.swift; sourceTree = "<group>"; };
 		63ADD8DD2AFD11F90010CF61 /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				63FA37412AFA5E6E006F2AB7 /* Main.storyboard */,
 				63ADD8DF2AFD12B20010CF61 /* fifthViewController.swift */,
 				63ADD8DD2AFD11F90010CF61 /* fourthViewController.swift */,
+				63673D8A2AFDF11600E98EC8 /* fourthDetailViewController.swift */,
 				63ADD8DB2AFD0E3C0010CF61 /* thirdDetailViewController.swift */,
 				63ADD8D92AFD0CCC0010CF61 /* thirdViewController.swift */,
 				63FA37712AFA74D6006F2AB7 /* secondViewController.swift */,
@@ -286,6 +289,7 @@
 				63FA37402AFA5E6E006F2AB7 /* ViewController.swift in Sources */,
 				63ADD8DA2AFD0CCC0010CF61 /* thirdViewController.swift in Sources */,
 				63FA373C2AFA5E6D006F2AB7 /* AppDelegate.swift in Sources */,
+				63673D8B2AFDF11600E98EC8 /* fourthDetailViewController.swift in Sources */,
 				63FA376E2AFA641C006F2AB7 /* secondDetailViewController.swift in Sources */,
 				63FA373E2AFA5E6E006F2AB7 /* SceneDelegate.swift in Sources */,
 				63ADD8DE2AFD11F90010CF61 /* fourthViewController.swift in Sources */,

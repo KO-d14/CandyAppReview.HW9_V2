@@ -84,9 +84,9 @@ class ViewController:  UIViewController
         override func viewDidLoad()
         {
             backgroundImageView.image = UIImage(named: "HalloweenMainCover")
-            featuredCandyImageView.image = UIImage(named: "crunch")
+            featuredCandyImageView.image = UIImage(named: "JapaneseSnack_HatoSable")
             
-            featuredCandyLabel.text = "Featured Candy: \n Crunch"
+            featuredCandyLabel.text = "Featured Candy: \n Hato Sable"
             
             learnMoreButton.backgroundColor = UIColor.purple
             learnMoreButton.setTitleColor(.white, for: .normal)

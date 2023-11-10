@@ -5,7 +5,8 @@
 //  Created by Aina Kodaira on 11/7/23.
 //
 
-// THIS IS THE PAGE WITH THE TABLEVIEW 
+// THIS IS THE PAGE WITH THE TABLEVIEW
+// 1st TAB - CHOCOLATE 
 import UIKit
 
 class secondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
