@@ -21,7 +21,7 @@ class fifthViewController: UIViewController {
         super.viewDidLoad()
 
         fifthTabImageView.image = UIImage(named: "profilePic")
-        fifthTabLabel.text = "About Me"
+        fifthTabLabel.text = "Candy Reviewer: \n KO-d14"
         fifthTabTextView.text = "Aloha! I am KO-d14, and I have a huge sweet tooth for candy! One of the things I love about candies is that they create a smile on everyone's faces! :)"
         
         // Do any additional setup after loading the view.

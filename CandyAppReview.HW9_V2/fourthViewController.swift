@@ -18,11 +18,8 @@ class fourthViewController: UIViewController , UITableViewDelegate, UITableViewD
     
     var sugarCandiesArray = ["Coca-Cola Gummies", "Gummy Bears", "RingPop", "Candy Corn"]
     var ratingsArray = ["4 Stars ★★★★☆", "4 Stars ★★★★☆", "3 Stars ★★★☆☆", "4 Stars ★★★★☆"]
-    
-
 
     @IBOutlet weak var fourthTabTableView: UITableView!
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {

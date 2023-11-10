@@ -59,6 +59,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chocolate" image="heart.fill" catalog="system" id="0Gd-pU-28S"/>
+                    <navigationItem key="navigationItem" id="b4h-qK-6ff"/>
                     <connections>
                         <outlet property="tableView" destination="TMV-V3-Adr" id="6Ng-gA-jMo"/>
                     </connections>
@@ -151,7 +152,6 @@
                     <tabBarItem key="tabBarItem" title="Sugar Candies" image="heart.fill" catalog="system" id="Lh7-y8-gqP"/>
                     <connections>
                         <outlet property="fourthTabTableView" destination="hpG-Xm-G8V" id="9Oq-SX-rbP"/>
-                        <outlet property="fourthTableView" destination="hpG-Xm-G8V" id="H4w-Ye-4bd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLb-aK-osJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,7 +270,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="hY3-tW-mty" kind="show" identifier="mySegue" id="aV4-0W-5VC"/>
+                                            <segue destination="hY3-tW-mty" kind="show" identifier="mySegue" id="h97-im-mui"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -285,7 +285,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Japanese Snacks" image="heart" catalog="system" id="zWy-fe-kC8"/>
                     <connections>
-                        <outlet property="thirdTableView" destination="IBU-sH-QWm" id="sp1-RB-oPj"/>
+                        <outlet property="thirdTabTableView" destination="IBU-sH-QWm" id="89Y-lt-oMx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRK-ft-ybr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -394,10 +394,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="83c-yk-ldH" kind="relationship" relationship="viewControllers" id="eK1-t0-M5f"/>
-                        <segue destination="pTb-fV-vZ3" kind="relationship" relationship="viewControllers" id="x6g-lw-YsJ"/>
-                        <segue destination="7xj-te-B3V" kind="relationship" relationship="viewControllers" id="Xap-gL-Yi4"/>
-                        <segue destination="hxr-iw-Y5C" kind="relationship" relationship="viewControllers" id="ATu-YJ-z3e"/>
-                        <segue destination="Bis-rN-g5n" kind="relationship" relationship="viewControllers" id="WaC-5v-uo5"/>
+                        <segue destination="pTb-fV-vZ3" kind="relationship" relationship="viewControllers" id="b4z-eG-6Le"/>
+                        <segue destination="7xj-te-B3V" kind="relationship" relationship="viewControllers" id="BGb-xl-W8F"/>
+                        <segue destination="hxr-iw-Y5C" kind="relationship" relationship="viewControllers" id="dvp-Jf-fQJ"/>
+                        <segue destination="Bis-rN-g5n" kind="relationship" relationship="viewControllers" id="S8b-ch-hX9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ec-nK-FGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

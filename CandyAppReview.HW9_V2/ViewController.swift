@@ -84,7 +84,7 @@ class ViewController:  UIViewController
         override func viewDidLoad()
         {
             backgroundImageView.image = UIImage(named: "HalloweenMainCover")
-            featuredCandyImageView.image = UIImage(named: "JapaneseSnack_HatoSable")
+            featuredCandyImageView.image = UIImage(named: "JapaneseSnack_HatoSabre")
             
             featuredCandyLabel.text = "Featured Candy: \n Hato Sable"
             

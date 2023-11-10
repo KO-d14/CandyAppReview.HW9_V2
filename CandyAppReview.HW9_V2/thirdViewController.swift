@@ -19,9 +19,10 @@ class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var japaneseSnackArray = ["Hato Sable","Sapporo Potato", "Country Maam", "Yogurt"]
     var ratingsArray = ["★★★★★", "★★★★★", "★★★★★", "★★★★★"]
     
-    @IBOutlet weak var thirdTableView: UITableView!
+  
     
-   
+    @IBOutlet weak var thirdTabTableView: UITableView!
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -56,7 +57,7 @@ class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
           {
               let s1 = segue.destination as! thirdDetailViewController
-              let imageIndex = thirdTableView.indexPathForSelectedRow?.row
+              let imageIndex = thirdTabTableView.indexPathForSelectedRow?.row
               s1.imagePass = categoryTwoImagesData[imageIndex!]
 
           }
