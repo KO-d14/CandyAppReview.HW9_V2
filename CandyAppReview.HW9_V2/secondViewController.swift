@@ -70,6 +70,7 @@ class secondViewController: UIViewController, UITableViewDataSource, UITableView
         let dict = NSDictionary(contentsOfFile: path!)
         categoryOneImagesData = dict!.object(forKey:"CategoryOneImages") as! [String]
         
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     } //func viewDidLoad closing bracket
